@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+:root {
+  --accent-color: #8672FF;
+  --base-color: white;
+  --text-color: #2E2B41;
+  --input-color: #F3F0FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+  font-size: 12pt;
+  color: var(--text-color);
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: right;
+  overflow: hidden;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  background-color: var(--base-color);
+  height: 100vh;
+  width: max(40%, 600px);
+  padding: 10px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+form {
+  width: min(400px, 100%);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.input-box label {
+  height: 50px;
+  width: 50px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 10px 0 0 10px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box input {
+  flex-grow: 1;
+  height: 50px;
+  padding: 15px;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid var(--input-color);
+  background: var(--input-color);
+  transition: .2s;
+}
+
+.input-box input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+form button {
+  margin-top: 10px;
+  padding: .85em 4em;
+  border: none;
+  border-radius: 1000px;
+  background: var(--accent-color);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+}
+
+form button:hover {
+  background: var(--text-color);
+}
+
+#error-message {
+  color: #f06272;
+}
+
+.logout-btn {
+  background:#ff4d4d;
+  color:white;
+  padding:10px 20px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  margin:15px;
+}

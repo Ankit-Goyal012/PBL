@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Upload App</title>
+<link rel="stylesheet" href="modern-base.css">
+<link rel="stylesheet" href="upload.css">
+</head>
+
+<body>
+
+<button onclick="logout()" class="logout-btn">Logout</button>
+
+<div class="glass-card" style="width:520px">
+
+  <h1 class="title">Upload App</h1>
+  <p class="subtitle">Provide app details & screenshots</p>
+
+  <form id="uploadForm">
+
+    <div class="input-group">
+      <label>App Title</label>
+      <input id="title" type="text" placeholder="MyApp" required>
+    </div>
+
+    <div class="input-group">
+      <label>Description</label>
+      <textarea id="description" placeholder="App description..."></textarea>
+    </div>
+
+    <div class="upload-box" id="dropArea">
+      Click or drop images here
+      <input id="photosInput" type="file" multiple hidden>
+    </div>
+
+    <div class="thumbs" id="thumbs"></div>
+
+    <button class="primary-btn">Submit</button>
+
+  </form>
+
+</div>
+
+<script src="upload.js"></script>
+</body>
+</html>

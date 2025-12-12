@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenWare – Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <p class="subtitle">Access your OpenWare account</p>
+        <p id="error-message"></p>
+
+        <form id="form">
+            <div class="input-box">
+                <label for="email-input"><span>@</span></label>
+                <input type="email" id="email-input" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-box">
+                <label for="password-input">🔒</label>
+                <input type="password" id="password-input" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="js/login.js" defer></script>
+</body>
+</html>

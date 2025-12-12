@@ -1,0 +1,45 @@
+/* LOGIN PAGE ONLY */
+
+.input-group {
+  margin-bottom: 20px;
+  transform: translateZ(40px);
+}
+
+.input-group label {
+  color: #fff;
+  font-size: .9rem;
+  opacity: .95;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  margin-top: 6px;
+  background: rgba(255,255,255,0.25);
+  color: white;
+  backdrop-filter: blur(12px);
+  font-size: 1rem;
+
+  box-shadow:
+    0 6px 15px rgba(0,0,0,0.3),
+    inset 0 0 12px rgba(255,255,255,0.25);
+
+  transition: .25s;
+}
+
+.input-group input:focus {
+  outline: none;
+  transform: translateZ(20px) scale(1.04);
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.45),
+    inset 0 0 18px rgba(255,255,255,0.55);
+}
+
+#error-message {
+  color: #ffb6b6;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.35);
+}
